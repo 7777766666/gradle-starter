@@ -1,3 +1,0 @@
-def value = "first script"
-println "it is script: $value, ${gradle.hashCode()}"
-println "it is script: $value, ${hashCode()}, ${toString()}}"
