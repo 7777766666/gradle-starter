@@ -1,0 +1,3 @@
+def value = "second script"
+println "it is script: $value, ${gradle.hashCode()}"
+println "it is script: $value, ${hashCode()}, ${toString()}}"
