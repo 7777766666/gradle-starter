@@ -6,7 +6,28 @@
  * This project uses @Incubating APIs which are subject to change.
  */
 
+
+
 println "configuration phase"
 println "gradle id: ${gradle.hashCode()}"
 //println "root: ${rootProject.hashCode()}, ${project.hashCode()}, ${gradle.rootProject.hashCode}"
 println "root: ${rootProject.hashCode()}, ${project.hashCode()}"
+
+task("hello")
+hello.description = "It is hello task"
+hello.group = "777gradle"
+println (hello.group)
+
+hello {
+    description = "new name 666"
+    group = "666 Gradle"
+    println(description)
+    println(group)
+}
+
+task "second" {
+    description = "Second task"
+    group = "second group"
+    println(description)
+    println(group)
+}
