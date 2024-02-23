@@ -43,4 +43,8 @@ task "second" (description: "new second task", group: "new second group"){
     doFirst {
         println("do First")
     }
+        doLast {
+        println "do Last"
+        println "task: $description, group: $group, actions size: $actions.size"
+    }
 }
