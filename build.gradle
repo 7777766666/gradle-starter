@@ -56,3 +56,11 @@ task "second" (description: "new second task", group: "new second group"){
         println "$path"
     }
 }
+task six(description: "666"){
+    doLast {
+        println("Task: $description, $path")
+    }
+
+}
+
+six.dependsOn (second)
