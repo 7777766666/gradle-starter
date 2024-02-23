@@ -47,4 +47,8 @@ task "second" (description: "new second task", group: "new second group"){
         println "do last 2"
         println "$path"
     }
+        doLast {
+        println "do last 2"
+        println "$path"
+    }
 }
