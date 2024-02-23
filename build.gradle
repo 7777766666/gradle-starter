@@ -37,49 +37,18 @@ task "second" (description: "new second task", group: "new second group"){
     println ("task: $description, group: $group, action size: $actions.size")
 
     doLast {
-        println "do Last1"
+        println "do Last0"
         println "task: $description, group: $group, actions size: $actions.size"
     }
     doFirst {
         println("do First")
     }
     doLast {
-        println "do last 2"
+        println "do last 10"
         println "$path"
     }
         doLast {
-        println "do last 2"
-        println "$path"
-    }
-}
-
-    println(group)
-}
-
-//task "second" {
-//    description = "Second task"
-//    group = "second group"
-//    println(description)
-//    println(group)
-//}
-
-task "second" (description: "new second task", group: "new second group"){
-    println ("new second task")
-    println ("task: $description, group: $group, action size: $actions.size")
-
-    doLast {
-        println "do Last1"
-        println "task: $description, group: $group, actions size: $actions.size"
-    }
-    doFirst {
-        println("do First")
-    }
-    doLast {
-        println "do last 2"
-        println "$path"
-    }
-        doLast {
-        println "do last 2"
+        println "do last 20"
         println "$path"
     }
 }
